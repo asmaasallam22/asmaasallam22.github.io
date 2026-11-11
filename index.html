@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asmaa Sallam | DevOps Team Lead</title>
+<meta name="description" content="Asmaa Sallam, DevOps Team Lead. AWS, Google Cloud and Kubernetes certified. Cloud platforms, CI/CD and migrations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fafaf9; --surface: #ffffff; --text: #1c1917; --muted: #57534e;
+    --line: #e7e5e4; --accent: #0f766e; --accent-soft: #ccfbf1; --chip: #f5f5f4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0c0a09; --surface: #1c1917; --text: #f5f5f4; --muted: #a8a29e;
+      --line: #292524; --accent: #2dd4bf; --accent-soft: #134e4a; --chip: #292524;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.6 Inter, system-ui, -apple-system, sans-serif; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+
+  nav { position: sticky; top: 0; background: color-mix(in srgb, var(--bg) 88%, transparent);
+        backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); z-index: 10; }
+  nav .wrap { display: flex; justify-content: space-between; align-items: center; height: 56px; }
+  nav .logo { font-family: "JetBrains Mono", monospace; font-weight: 500; color: var(--text); }
+  nav ul { display: flex; gap: 20px; list-style: none; margin: 0; padding: 0; font-size: 14px; }
+  nav ul a { color: var(--muted); }
+
+  header { padding: 88px 0 64px; }
+  .kicker { font-family: "JetBrains Mono", monospace; color: var(--accent); font-size: 14px; margin: 0 0 12px; }
+  h1 { font-size: clamp(36px, 6vw, 56px); line-height: 1.1; margin: 0 0 12px; letter-spacing: -0.02em; }
+  .role { font-size: 20px; font-weight: 500; margin: 0 0 16px; }
+  .lead { font-size: 18px; color: var(--muted); max-width: 640px; margin: 0 0 28px; }
+  .cta { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 10px 18px; border-radius: 8px; font-weight: 500; font-size: 15px;
+         border: 1px solid var(--line); color: var(--text); background: var(--surface); }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+  .btn:hover { text-decoration: none; opacity: .9; }
+
+  section { padding: 56px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 14px; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); margin: 0 0 28px; }
+
+  .about p { max-width: 680px; color: var(--muted); font-size: 17px; margin: 0 0 14px; }
+  .facts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 22px; }
+  .card h3 { margin: 0 0 8px; font-size: 17px; }
+  .card p { margin: 0 0 14px; color: var(--muted); font-size: 15px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag { font-family: "JetBrains Mono", monospace; font-size: 12px; padding: 3px 8px; border-radius: 6px;
+         background: var(--chip); color: var(--muted); }
+
+  .certs { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+  .cert { display: flex; gap: 14px; align-items: center; background: var(--surface);
+          border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
+  .cert .badge { flex: none; width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center;
+                 background: var(--accent-soft); color: var(--accent); font: 600 13px "JetBrains Mono", monospace; }
+  .cert b { display: block; font-size: 15px; }
+  .cert span { color: var(--muted); font-size: 13px; }
+
+  .skills { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 24px; }
+  .skills h3 { font-size: 15px; margin: 0 0 10px; }
+  .skills ul { list-style: none; margin: 0; padding: 0; color: var(--muted); font-size: 15px; }
+  .skills li { padding: 2px 0; }
+
+  blockquote { margin: 0; background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent);
+               border-radius: 12px; padding: 20px 22px; color: var(--muted); font-size: 16px; }
+  blockquote footer { margin-top: 10px; font-size: 14px; color: var(--text); font-weight: 500; }
+
+  .site-footer { padding: 40px 0 60px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  .site-footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+
+  @media (max-width: 560px) {
+    nav ul { gap: 14px; }
+    nav ul li.hide-sm { display: none; }
+    header { padding: 56px 0 44px; }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#">asmaa.sallam</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li class="hide-sm"><a href="#certs">Certs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <p class="kicker">$ whoami</p>
+    <h1>Asmaa Sallam</h1>
+    <p class="role">DevOps Team Lead</p>
+    <p class="lead">I build cloud platforms and the pipelines that ship to them, so releases are safe, repeatable and a little bit boring (in a good way).</p>
+    <div class="cta">
+      <a class="btn primary" href="#work">See my work</a>
+      <a class="btn" href="https://www.linkedin.com/in/asmaa-sallam/">LinkedIn</a>
+      <a class="btn" href="https://github.com/asmaasallam22">GitHub</a>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="about">
+  <div class="wrap">
+    <h2>About me</h2>
+    <p>I started in telecom and Linux operations: Red Hat servers, Oracle databases, networks and middleware. Today I lead a DevOps team working across AWS, Google Cloud and Azure.</p>
+    <p>I love the detective side of the job: ruling out possibilities one by one until I find the missing piece, even when it turns out to be one key press at the right moment. I also love making the right way the easy way, with shared modules and pipeline templates so every new project starts secure from day one.</p>
+    <p>I use AI every day to think through ideas, write scripts and troubleshoot faster. I still own the thinking: I understand the problem, decide the goal, and check the result.</p>
+    <div class="facts">
+            <span class="tag">🗣️ Arabic · English</span>
+      <span class="tag">🎓 ITI graduate</span>
+      <span class="tag">👩‍💻 Team lead</span>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Selected work</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>On-prem to Azure migration</h3>
+        <p>Moved a legacy production Windows Server (SQL Server + ERP, ~800 GB) from Hyper-V to Azure with minimal downtime, working through appliance, RBAC and access blockers.</p>
+        <div class="tags"><span class="tag">Azure Migrate</span><span class="tag">Site Recovery</span><span class="tag">Hyper-V</span></div>
+      </div>
+      <div class="card">
+        <h3>Cloud IaC library</h3>
+        <p>Shared Terraform / Terragrunt modules for AWS and GCP, with non-prod / prod splits and “blueprints” that deploy a whole app stack from one config file.</p>
+        <div class="tags"><span class="tag">Terraform</span><span class="tag">Terragrunt</span><span class="tag">AWS</span><span class="tag">GCP</span></div>
+      </div>
+      <div class="card">
+        <h3>CI/CD standards</h3>
+        <p>Reusable pipelines for backend, frontend and infra repos: OIDC sign-in with no stored secrets, plan on PR, approval-gated production and automatic release tags.</p>
+        <div class="tags"><span class="tag">CircleCI</span><span class="tag">OIDC</span><span class="tag">GitHub</span></div>
+      </div>
+      <div class="card">
+        <h3>HIPAA-ready AWS</h3>
+        <p>AWS Config with the 130-rule HIPAA conformance pack, KMS encryption and locked audit logs, plus a clear map of which controls are covered.</p>
+        <div class="tags"><span class="tag">AWS Config</span><span class="tag">KMS</span><span class="tag">HIPAA</span></div>
+      </div>
+      <div class="card">
+        <h3>Upgrades on 100+ servers</h3>
+        <p>Upgraded TIBCO middleware (Admin, EMS, RV, Hawk, BW) on more than 100 servers using Ansible and Bash, with no customer impact.</p>
+        <div class="tags"><span class="tag">Ansible</span><span class="tag">Bash</span><span class="tag">Linux</span></div>
+      </div>
+      <div class="card">
+        <h3>Load-testing tool</h3>
+        <p>A k6 capacity test that raises traffic until the SLO breaks and reports the last healthy level. Built from the OpenAPI spec, and it refuses production hosts.</p>
+        <div class="tags"><span class="tag">k6</span><span class="tag">OpenAPI</span><span class="tag">CircleCI</span></div>
+      </div>
+      <div class="card">
+        <h3>Database release pipeline</h3>
+        <p>A Jenkins pipeline for config-database changes: validate, dry run, raise a change request, deploy in the maintenance window, close the request.</p>
+        <div class="tags"><span class="tag">Jenkins</span><span class="tag">SQL</span><span class="tag">Change mgmt</span></div>
+      </div>
+      <div class="card">
+        <h3>AI agent platform</h3>
+        <p>Infrastructure for scheduled AI agents that run in isolated containers. Each run gets short-lived keys that reach only its own user's data, and results go out by email.</p>
+        <div class="tags"><span class="tag">ECS Fargate</span><span class="tag">EventBridge</span><span class="tag">Lambda</span><span class="tag">DynamoDB</span></div>
+      </div>
+      <div class="card">
+        <h3>AI code review in CI</h3>
+        <p>An automated reviewer that runs on every pull request, driven by one central set of coding, security and healthcare guidelines.</p>
+        <div class="tags"><span class="tag">LLM</span><span class="tag">GitHub App</span><span class="tag">CircleCI</span></div>
+      </div>
+      <div class="card">
+        <h3>Medical document redaction</h3>
+        <p>A two-step PDF tool that finds patient data, lets a person review it, then permanently redacts it, all inside the user's own AWS account.</p>
+        <div class="tags"><span class="tag">Textract</span><span class="tag">Comprehend Medical</span><span class="tag">Docker</span></div>
+      </div>
+      <div class="card">
+        <h3>GCP platform template</h3>
+        <p>A reusable Google Cloud setup for an API on GKE with Cloud SQL, Firebase Hosting frontends, DNS and alerts. CI deploys with Workload Identity, no static keys.</p>
+        <div class="tags"><span class="tag">GKE</span><span class="tag">Cloud SQL</span><span class="tag">Terragrunt</span></div>
+      </div>
+      <div class="card">
+        <h3>CloudFormation app stack</h3>
+        <p>Ordered stacks for a full web app (network, ECS Fargate, RDS, Cognito, Amplify, CloudFront) with one template set for dev, QA and prod, plus dry-run previews.</p>
+        <div class="tags"><span class="tag">CloudFormation</span><span class="tag">ECS</span><span class="tag">RDS</span></div>
+      </div>
+      <div class="card">
+        <h3>Secure upload portal</h3>
+        <p>Serverless, code-protected file intake for outside people: one-time links, email codes, and direct uploads into a private bucket.</p>
+        <div class="tags"><span class="tag">Lambda</span><span class="tag">API Gateway</span><span class="tag">SES</span><span class="tag">S3</span></div>
+      </div>
+      <div class="card">
+        <h3>IAM automation</h3>
+        <p>Scripts for the full user lifecycle across AWS accounts: onboarding, access grants, key rotation, offboarding and audits, all behind MFA.</p>
+        <div class="tags"><span class="tag">IAM</span><span class="tag">AWS CLI</span><span class="tag">Bash</span></div>
+      </div>
+      <div class="card">
+        <h3>Disaster recovery site</h3>
+        <p>Designed and built a service at a DR site, from network topology to app deployment. The first DR drill passed at 80%.</p>
+        <div class="tags"><span class="tag">DR</span><span class="tag">Networking</span><span class="tag">HA</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="certs">
+  <div class="wrap">
+    <h2>Certifications</h2>
+    <div class="certs">
+      <div class="cert"><div class="badge">AWS</div><div><b>AWS Certified Solutions Architect</b><span>Amazon Web Services · 2025</span></div></div>
+      <div class="cert"><div class="badge">GCP</div><div><b>Associate Cloud Engineer</b><span>Google Cloud · 2025</span></div></div>
+      <div class="cert"><div class="badge">K8s</div><div><b>Certified Kubernetes Administrator</b><span>The Linux Foundation · 2026</span></div></div>
+      <div class="cert"><div class="badge">HIP</div><div><b>HIPAA Associate</b><span>HIPAA Training · 2026</span></div></div>
+      <div class="cert"><div class="badge">+6</div><div><b>Google Cloud skill badges</b><span>Terraform, networking, security, load balancing</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div><h3>Cloud</h3><ul><li>AWS</li><li>Google Cloud</li><li>Azure</li></ul></div>
+      <div><h3>Containers &amp; IaC</h3><ul><li>Kubernetes, Docker</li><li>Terraform, Terragrunt</li><li>CloudFormation, Ansible</li></ul></div>
+      <div><h3>CI/CD</h3><ul><li>CircleCI</li><li>Jenkins</li><li>GitHub, Git</li></ul></div>
+      <div><h3>Systems &amp; Security</h3><ul><li>Red Hat Linux, Bash, Python</li><li>Oracle, SQL</li><li>IAM, HIPAA controls</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="kind-words">
+  <div class="wrap">
+    <h2>What colleagues say</h2>
+    <div class="grid">
+      <blockquote>“As a team lead, she leads with clarity and care… When tasks are vague, she covers all the bases and turns ambiguity into a clear plan.”<footer>Mahmoud Haytham</footer></blockquote>
+      <blockquote>“One of the most dedicated engineers I’ve worked with… reliable, supportive, and always takes ownership of challenges.”<footer>Mohamed Sherif</footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p class="lead">Happy to talk about DevOps, cloud, or interesting problems. I also share short DevOps tips on LinkedIn in Arabic and English.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:asmaa.sallam2022@gmail.com">Email me</a>
+      <a class="btn" href="https://www.linkedin.com/in/asmaa-sallam/">LinkedIn</a>
+      <a class="btn" href="https://github.com/asmaasallam22">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Asmaa Sallam</span>
+    <span>Plain HTML &amp; CSS · hosted on GitHub Pages</span>
+  </div>
+</footer>
+</body>
+</html>
