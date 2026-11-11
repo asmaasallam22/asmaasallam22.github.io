@@ -62,6 +62,10 @@
   .certs { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
   .cert { display: flex; gap: 14px; align-items: center; background: var(--surface);
           border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
+  a.cert { color: var(--text); text-decoration: none; transition: border-color .15s; }
+  a.cert:hover { border-color: var(--accent); }
+  a.cert span { color: var(--accent); }
+  .cert img { flex: none; width: 48px; height: 48px; object-fit: contain; }
   .cert .badge { flex: none; width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center;
                  background: var(--accent-soft); color: var(--accent); font: 600 13px "JetBrains Mono", monospace; }
   .cert b { display: block; font-size: 15px; }
@@ -215,11 +219,17 @@
   <div class="wrap">
     <h2>Certifications</h2>
     <div class="certs">
+      <a class="cert" href="https://www.credly.com/badges/6bcb590e-3b79-45f3-84f5-0da61590364e/public_url" target="_blank" rel="noopener"><img src="https://images.credly.com/images/8b8ed108-e77d-4396-ac59-2504583b9d54/linkedin_thumb_cka_from_cncfsite__281_29.png" alt="" width="48" height="48"><div><b>CKA: Certified Kubernetes Administrator</b><span>The Linux Foundation · 2026 · Verify ↗</span></div></a>
+      <a class="cert" href="https://www.credly.com/badges/aeca39f7-6225-4f0c-bd70-8074c7f44afc/public_url" target="_blank" rel="noopener"><img src="https://images.credly.com/images/08096465-cbfc-4c3e-93e5-93c5aa61f23e/linkedin_thumb_image.png" alt="" width="48" height="48"><div><b>Associate Cloud Engineer</b><span>Google Cloud · 2025 · Verify ↗</span></div></a>
+      <a class="cert" href="https://www.credly.com/badges/28136a1a-7228-45c9-8c98-bd7f48836688/public_url" target="_blank" rel="noopener"><img src="https://images.credly.com/images/b18154fb-9bd3-47e5-a6f1-554be512947d/linkedin_thumb_image.png" alt="" width="48" height="48"><div><b>Build Infrastructure with Terraform on Google Cloud</b><span>Google Cloud skill badge · 2025 · Verify ↗</span></div></a>
+      <a class="cert" href="https://www.credly.com/badges/18781274-4ac0-4bf7-8cb2-01831fb8a156/public_url" target="_blank" rel="noopener"><img src="https://images.credly.com/images/e1131ae3-4a52-4af1-9801-b7853767cf79/linkedin_thumb_image.png" alt="" width="48" height="48"><div><b>Build a Secure Google Cloud Network</b><span>Google Cloud skill badge · 2025 · Verify ↗</span></div></a>
+      <a class="cert" href="https://www.credly.com/badges/ee79dc2b-7440-459f-b28c-4e693afef179/public_url" target="_blank" rel="noopener"><img src="https://images.credly.com/images/b126c61c-4781-4f03-9b2b-062963003abf/linkedin_thumb_image.png" alt="" width="48" height="48"><div><b>Develop Your Google Cloud Network</b><span>Google Cloud skill badge · 2025 · Verify ↗</span></div></a>
+      <a class="cert" href="https://www.credly.com/badges/2fa240ed-03a2-43db-802e-46f3bcc43450/public_url" target="_blank" rel="noopener"><img src="https://images.credly.com/images/f1dbea96-0ef4-4857-bb85-3d208a82de10/linkedin_thumb_image.png" alt="" width="48" height="48"><div><b>Implement Cloud Security Fundamentals on Google Cloud</b><span>Google Cloud skill badge · 2025 · Verify ↗</span></div></a>
+      <a class="cert" href="https://www.credly.com/badges/e112a415-68bb-4436-98e9-7c76811f8c4a/public_url" target="_blank" rel="noopener"><img src="https://images.credly.com/images/eea11cba-2a98-4bbe-bad2-447878dd34a2/linkedin_thumb_image.png" alt="" width="48" height="48"><div><b>Implement Load Balancing on Compute Engine</b><span>Google Cloud skill badge · 2025 · Verify ↗</span></div></a>
+      <a class="cert" href="https://www.credly.com/badges/eeeb74d4-c900-4c2c-9e0a-daf59f15b4e7/public_url" target="_blank" rel="noopener"><img src="https://images.credly.com/images/42326d44-14ff-4eda-b9c5-7d8f12919253/linkedin_thumb_image.png" alt="" width="48" height="48"><div><b>Set Up an App Dev Environment on Google Cloud</b><span>Google Cloud skill badge · 2025 · Verify ↗</span></div></a>
       <div class="cert"><div class="badge">AWS</div><div><b>AWS Certified Solutions Architect</b><span>Amazon Web Services · 2025</span></div></div>
-      <div class="cert"><div class="badge">GCP</div><div><b>Associate Cloud Engineer</b><span>Google Cloud · 2025</span></div></div>
-      <div class="cert"><div class="badge">K8s</div><div><b>Certified Kubernetes Administrator</b><span>The Linux Foundation · 2026</span></div></div>
+      <div class="cert"><div class="badge">HIP</div><div><b>GIAC HIPAA Security Implementation</b><span>HIPAA Training · 2026</span></div></div>
       <div class="cert"><div class="badge">HIP</div><div><b>HIPAA Associate</b><span>HIPAA Training · 2026</span></div></div>
-      <div class="cert"><div class="badge">+6</div><div><b>Google Cloud skill badges</b><span>Terraform, networking, security, load balancing</span></div></div>
     </div>
   </div>
 </section>
